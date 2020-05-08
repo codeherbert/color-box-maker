@@ -5,7 +5,7 @@ import NewBoxForm from './NewBoxForm';
 class BoxList extends Component {
     constructor(props) {
         super(props);
-        this.state = { boxes:[{ height: "7", width: "7", color: "teal" }] };
+        this.state = { boxes:[] };
         this.create = this.create.bind(this);
     }
 
@@ -17,7 +17,11 @@ class BoxList extends Component {
 
     render() {
         const boxes = this.state.boxes.map(box => (
-            <Box height={box.height} width={box.width} color={box.color} />
+            <Box 
+            height={box.height} 
+            width={box.width} 
+            color={box.color}
+            key={box.id} />
         ));
         return (
             <div>
