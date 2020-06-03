@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import Box from './Box';
 import NewBoxForm from './NewBoxForm';
+import './BoxList.css';
 
 class BoxList extends Component {
     constructor(props) {
@@ -32,10 +33,12 @@ class BoxList extends Component {
             removeBox={() => this.remove(box.id)} />
         ));
         return (
-            <div>
+            <div className="BoxList">
                 <h1>Color Box Maker</h1>
                 <NewBoxForm createBox={this.create}/>
-                { boxes }
+                <div className="BoxList-box-wrapper">
+                    { boxes }
+                </div>
             </div>
         )
     }
