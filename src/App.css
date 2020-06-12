@@ -10,8 +10,16 @@ label {
   margin-right: 10px;
 }
 
+label[for="width"] {
+  margin-right: 15px;
+}
+
+label[for="color"] {
+  margin-right: 20px;
+}
+
 button {
-  margin-top: 10px;
+  margin: 10px 0 25px 55px;
 }
 
 .App-logo {

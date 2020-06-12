@@ -34,7 +34,7 @@ class BoxList extends Component {
         ));
         return (
             <div className="BoxList">
-                <h1>Color Box Maker</h1>
+                <h1 className="BoxList-title"><span>C</span><span>O</span><span>L</span><span>O</span><span>R</span> Box Maker</h1>
                 <NewBoxForm createBox={this.create}/>
                 <div className="BoxList-box-wrapper">
                     { boxes }
